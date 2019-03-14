@@ -14,8 +14,34 @@
     </md-toolbar>
 
     <div class="container" layout="row" flex>
-      <md-sidenav md-is-locked-open="true" class="lightblue">Sidenav</md-sidenav>
-      <md-content id="content" class="lightgreen" flex>Content</md-content>
+      <md-sidenav md-is-locked-open="true" class="md-white">
+        <md-list>
+          <md-list-item>
+            <md-button>
+              <md-icon md-svg-src="svg/avatar-1.svg" class="avatar"></md-icon>
+              Thomas Burleson
+            </md-button>
+          </md-list-item>
+          <md-list-item>
+            <md-button>
+              <md-icon md-svg-src="svg/avatar-2.svg" class="avatar"></md-icon>
+              Aaron Frost
+            </md-button>
+          </md-list-item>
+        </md-list>
+      </md-sidenav>
+      <div class="container" layout "column">
+        <md-content id="content" flex>
+          <md-icon md-svg-src="svg/avatar-2.svg" class="avatar"></md-icon>
+          <h2>Aaron Frost</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet tempus sem. Maecenas tellus orci, luctus et porta sed, scelerisque et enim. Duis eget risus non risus lobortis efficitur in in dui. Morbi arcu metus, sagittis a est efficitur, posuere imperdiet justo. Pellentesque sagittis justo id enim imperdiet placerat. Praesent nec diam nec risus vehicula convallis. Etiam malesuada nulla ac mi iaculis consequat.</p>
+        </md-content>
+        <md-content id="content2" flex>
+          <md-icon md-svg-src="svg/avatar-1.svg" class="avatar"></md-icon>
+          <h2>Jack Frost</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet tempus sem. Maecenas tellus orci, luctus et porta sed, scelerisque et enim. Duis eget risus non risus lobortis efficitur in in dui. Morbi arcu metus, sagittis a est efficitur, posuere imperdiet justo. Pellentesque sagittis justo id enim imperdiet placerat. Praesent nec diam nec risus vehicula convallis. Etiam malesuada nulla ac mi iaculis consequat.</p>
+        </md-content>
+      </div>
     </div>
 
     <!-- <div ng-controller="AppCtrl" ng-cloak>
@@ -25,9 +51,6 @@
   </div>
   <script src="app.js"></script>
   <style>
-    .red{background-color:red}
-    .lightblue{background-color:lightblue}
-    .lightgreen{background-color:lightgreen}
   </style>
 </body>
 </html>
