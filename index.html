@@ -8,23 +8,26 @@
       require('angular-material')
     </script>
   </head>
-  <body ng-app="MyApp">
+  <body ng-app="MyApp" layout="column">
+    <md-toolbar>
+      <h1>Angular Material Starter</h1>
+    </md-toolbar>
 
-    <div ng-controller="AppCtrl" ng-cloak>
+    <div class="container" layout="row" flex>
+      <md-sidenav md-is-locked-open="true" class="lightblue">Sidenav</md-sidenav>
+      <md-content id="content" class="lightgreen" flex>Content</md-content>
+    </div>
+
+    <!-- <div ng-controller="AppCtrl" ng-cloak>
     <md-content>
       <md-button class="md-raised md-primary">Primary</md-button>
-    </md-content>
+    </md-content> -->
   </div>
-  <script>
-    angular.module('MyApp', ['ngMaterial'])
-    .controller('AppCtrl', function($scope) {
-      $scope.title1 = 'Button';
-      $scope.title4 = 'Warn';
-      $scope.isDisabled = true;
-      $scope.googleUrl = 'http://google.com';
-    });
-  </script>
-
-
+  <script src="app.js"></script>
+  <style>
+    .red{background-color:red}
+    .lightblue{background-color:lightblue}
+    .lightgreen{background-color:lightgreen}
+  </style>
 </body>
 </html>
